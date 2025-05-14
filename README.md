@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# Personal Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive, modern personal portfolio website built with React, Tailwind CSS, and Typed.js. Showcases sections for **Home**, **About**, **Experience**, **Projects**, **Skills**, and **Contact**, with social links including Email, LinkedIn, GitHub, Instagram, and TikTok.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Demo](#demo)  
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Project Structure](#project-structure)  
+- [Customizing](#customizing)  
+- [License](#license)  
+- [Author](#author)  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `npm test`
+![Homepage screenshot](./screenshot.png)  
+*(Replace `screenshot.png` with an actual image of your site in the repo root.)*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Hero Section** with animated typing effect (`Typed.js`)  
+- **Responsive Navigation** that adapts to mobile and desktop  
+- **About Section** with profile image and bio  
+- **Experience & Projects** displayed in responsive grids  
+- **Skills** cards with icons and descriptions  
+- **Footer** with social icons and links  
+- **Dark theme** with customizable brand colors  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech Stack
 
-### `npm run eject`
+- **React** for UI components  
+- **Tailwind CSS** for utility-first styling  
+- **Typed.js** for typing animation in the hero  
+- **FontAwesome** for scalable vector icons  
+- **Vite / Create React App** scaffold  
+- **GitHub Pages / Netlify / Vercel** for deployment  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/krish-thakker/Personal-Website.git
+   cd Personal-Website
+   ```  
+2. **Install dependencies**  
+   ```bash
+   npm install
+   ```  
+3. **Start the development server**  
+   ```bash
+   npm run start
+   ```  
+4. **Open your browser** at  
+   ```
+   http://localhost:3000
+   ```  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Edit your personal details in `src/App.js`.  
+- Replace `/public/assets/` images with your own logos and photos.  
+- Tweak brand colors in `tailwind.config.js` under the `extend.colors` block.  
+- Add or remove sections by modifying the JSX in `src/App.js`.  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+Personal-Website/
+├── public/
+│   ├── assets/           # images, logos, icons
+│   └── index.html        # base HTML
+├── src/
+│   ├── index.css         # Tailwind imports & base resets
+│   ├── App.js            # main React component
+│   └── index.js          # React entrypoint
+├── tailwind.config.js    # Tailwind customization
+├── postcss.config.js     # PostCSS + autoprefixer
+├── package.json
+└── README.md
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Customizing
 
-### Making a Progressive Web App
+- **Fonts:** Montserrat is loaded via Google Fonts in `public/index.html`.  
+- **Colors:** Adjust `myBlue` and `myGray` in `tailwind.config.js`.  
+- **Breakpoints:** Tailwind’s defaults (`sm`, `md`, `lg`, `xl`) power responsive layouts.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Author
 
-### `npm run build` fails to minify
+**Krish Thakker**  
+- Email: [kthakker00@gmail.com](mailto:kthakker00@gmail.com)  
+- GitHub: [@krish-thakker](https://github.com/krish-thakker)  
+- LinkedIn: [krish-thakker](https://linkedin.com/in/krish-thakker)  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> ⭐ Feel free to star the repo if you found it helpful!
