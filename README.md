@@ -51,3 +51,5 @@ To run this project locally, follow these steps:
 -   **Typed.js**: Typewriter effect for the hero section.
 -   **FontAwesome**: Icons for social links and UI elements.
 -   **Google Fonts**: Montserrat font family.
+
+<!-- Trigger Cloudflare Build -->
